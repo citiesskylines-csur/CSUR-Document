@@ -8,7 +8,7 @@ module.exports = {
           // medium-zoom options here
           // See: https://github.com/francoischalifour/medium-zoom#options
           options: {
-            margin: 16
+            margin: 16,
           }
         }
       },
@@ -46,14 +46,14 @@ module.exports = {
         // Git 仓库和编辑链接
         // 假定是 GitHub. 同时也可以是一个完整的 GitLab URL
         repo: 'citiesskylines-csur/CSUR',
-        // 自定义仓库链接文字。默认从 `themeConfig.repo` 中自动推断为
+        // 自定义仓库链接在菜单栏显示出来的文字。默认从 `themeConfig.repo` 中自动推断为
         // "GitHub"/"GitLab"/"Bitbucket" 其中之一，或是 "Source"。
         repoLabel: 'GitHub',
 
         // 以下为可选的编辑链接选项
 
         // 假如你的文档仓库和项目本身不在一个仓库：
-        docsRepo: 'Littlegolden/littlegolden.github.io',
+        docsRepo: 'Littlegolden/CSUR-Docs',
         // 假如文档不是放在仓库的根目录下：
         // docsDir: 'docs',
         // 假如文档放在一个特定的分支下：
