@@ -18,17 +18,17 @@ module.exports = {
         // 作为特例，默认语言可以使用 '/' 作为其路径。
         '/': {
             lang: 'zh-Hans', // 将会被设置为 <html> 的 lang 属性
-            title: '都市天际线城市道路',
+            title: '都市天际线城市道路 - CSUR',
             description: '全新 CSUR 正在内测中 😏',
         },
         '/en/': {
             lang: 'en',
-            title: 'Cities Skylines Urban Road',
+            title: 'Cities Skylines Urban Road - CSUR',
             description: 'All-new version of CSUR is in beta.',
         },
         '/ja/': {
             lang: 'ja',
-            title: '都市スカイライン都市道路',
+            title: '都市スカイライン都市道路 - CSUR',
             description: '新版CSURはもうテスト段階になりました。',
           }
     },
