@@ -2,7 +2,15 @@ module.exports = {
     plugins: {
         '@vuepress/back-to-top':{},
         '@vuepress/nprogress':{},
-        '@vuepress/medium-zoom':{}
+        '@vuepress/medium-zoom': {
+            selector: 'img.zoom-custom-imgs',
+            // medium-zoom options here
+            // See: https://github.com/francoischalifour/medium-zoom#options
+            options: {
+            margin: 16,
+            scrollOffset: 40
+            }
+        }
     },
     // HTML多语言配置
     locales: {
