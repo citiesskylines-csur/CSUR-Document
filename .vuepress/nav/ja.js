@@ -15,6 +15,5 @@ module.exports = [
             { text: 'Reddit', link: 'https://www.reddit.com/r/CitiesSkylinesModding/comments/d8y4xo/csur_automated_creation_of_road_assets_with/' },
           ] }
         ]
-      },
-    { text: 'Github', link: 'https://github.com/citiesskylines-csur/CSUR' }
+      }
 ]   

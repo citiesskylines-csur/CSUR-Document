@@ -2,15 +2,8 @@ module.exports = {
     plugins: {
         '@vuepress/back-to-top':{},
         '@vuepress/nprogress':{},
-        '@vuepress/medium-zoom': {
-          selector: 'img.zoom-custom-imgs',
-          // medium-zoom options here
-          // See: https://github.com/francoischalifour/medium-zoom#options
-          options: {
-            margin: 16
-          }
-        }
-      },
+        '@vuepress/medium-zoom':{}
+    },
     // HTML多语言配置
     locales: {
         // 键名是该语言所属的子路径
