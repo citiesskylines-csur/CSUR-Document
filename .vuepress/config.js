@@ -8,7 +8,7 @@ module.exports = {
             // See: https://github.com/francoischalifour/medium-zoom#options
             options: {
             margin: 16,
-            scrollOffset: 40
+            scrollOffset: 40,
             }
         }
     },
