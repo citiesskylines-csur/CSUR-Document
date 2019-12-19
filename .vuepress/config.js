@@ -35,6 +35,10 @@ module.exports = {
     themeConfig: {
         logo: '/logo.png',
         smoothScroll: true, // 平滑滚动
+        algolia: { // 配置 Algolia 搜索
+            apiKey: '5e462462c53fab53286a9ddc5ef386b1',
+            indexName: 'csur'
+        }
         
         // Git 仓库和编辑链接
         // 假定是 GitHub. 同时也可以是一个完整的 GitLab URL
