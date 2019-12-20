@@ -89,8 +89,8 @@ module.exports = {
                 label: '正體中文',
                 nav: require('./nav/tw'),
                 sidebar: {
-                    '/guide/': getGuideSidebar('前言','上手指南','安裝','FAQ','捐贈'),
-                    '/develop/': getDevelopSidebar('施工中')
+                    '/tw/guide/': getGuideSidebar('前言','上手指南','安裝','FAQ','捐贈'),
+                    '/tw/develop/': getDevelopSidebar('施工中')
                 },
                 // 默认为 "Edit this page" ， 编辑此页提示
                 editLinkText: '在 GitHub 上編輯此頁',
