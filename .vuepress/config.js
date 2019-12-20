@@ -14,7 +14,7 @@ module.exports = {
             title: '都市天际线城市道路 - CSUR',
             description: '全新 CSUR 正在内测中 😏',
         },
-        '/': {
+        '/tw/': {
             lang: 'zh-Hant', // 将会被设置为 <html> 的 lang 属性
             title: '都市天際線城市道路 - CSUR',
             description: '全新 CSUR 正在內測中 😏',
