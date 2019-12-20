@@ -1,7 +1,7 @@
 ---
 home: true
 heroImage: /avatar_Gradients.webp
-heroText: CSUR へようこそ
+heroText: CSUR のご利用を歓迎します
 tagline: 新版CSURはもうテスト段階になりました
 actionText: 始めましょう →
 actionLink: /ja/guide/
