@@ -4,7 +4,7 @@ heroImage: /avatar_Gradients.webp
 heroText: 歡迎使用 CSUR
 tagline: 全新 CSUR 正在內測中
 actionText: 快速上手 →
-actionLink: /guide/
+actionLink: /tw/guide/
 features:
 - title: 新特性
   details: 左轉專用道路、BRT路，擁有完整的匝道介面模組合集，所有路均帶有隧道模型和車道訓示等。

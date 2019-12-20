@@ -1,6 +1,5 @@
 ---
 title: 上手指南
-lang: zh-TW
 ---
 
 <p align="center">

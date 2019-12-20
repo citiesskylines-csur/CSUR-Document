@@ -3,7 +3,7 @@ title: 開發指南
 ---
 
 <p align="center">
-<img alt="JDK" src="/logo.png"/>
+<img alt="LOGO" src="/logo.png"/>
 </p>
 
 ------------------------------

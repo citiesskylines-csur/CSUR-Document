@@ -9,4 +9,4 @@
 
 |                              アリペイ / WeChat / QQ                              |
 | :----------------------------------------------------------------------: |
-| <img src="https://gw.alipayobjects.com/zos/rmsportal/GKQYMQdvoelDSjqRzLmo.png" width="200"/> |
+| <img src="https://i.loli.net/2019/12/20/5ZBuakxyinLsz42.jpg"/> |

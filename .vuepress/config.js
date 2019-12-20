@@ -14,6 +14,11 @@ module.exports = {
             title: '都市天际线城市道路 - CSUR',
             description: '全新 CSUR 正在内测中 😏',
         },
+        '/': {
+            lang: 'zh-Hant', // 将会被设置为 <html> 的 lang 属性
+            title: '都市天際線城市道路 - CSUR',
+            description: '全新 CSUR 正在內測中 😏',
+        },
         '/en/': {
             lang: 'en',
             title: 'Cities Skylines Urban Road - CSUR',
@@ -69,11 +74,26 @@ module.exports = {
                 label: '简体中文',
                 nav: require('./nav/zh'),
                 sidebar: {
-                    '/guide/': getGuideSidebar('前言','上手指南','如何安装','FAQ','捐赠'),
+                    '/guide/': getGuideSidebar('前言','上手指南','安装','FAQ','捐赠'),
                     '/develop/': getDevelopSidebar('施工中')
                 },
                 // 默认为 "Edit this page" ， 编辑此页提示
                 editLinkText: '在 GitHub 上编辑此页',
+                // 最后更新时间
+                lastUpdated: '上次更新' // string | boolean
+            },
+            '/tw/': {
+                // 多语言下拉菜单的标题
+                selectText: '🌏選擇語言',
+                // 该语言在下拉菜单中的标签
+                label: '正體中文',
+                nav: require('./nav/tw'),
+                sidebar: {
+                    '/guide/': getGuideSidebar('前言','上手指南','安裝','FAQ','捐贈'),
+                    '/develop/': getDevelopSidebar('施工中')
+                },
+                // 默认为 "Edit this page" ， 编辑此页提示
+                editLinkText: '在 GitHub 上編輯此頁',
                 // 最后更新时间
                 lastUpdated: '上次更新' // string | boolean
             },
@@ -85,7 +105,7 @@ module.exports = {
                 nav: require('./nav/en'),
                 sidebar: {
                     '/en/guide/': getGuideSidebar('Perface','Getting Started','Install','FAQ','Donate'),
-                    '/en/develop/': getDevelopSidebar('Under Building')
+                    '/en/develop/': getDevelopSidebar('Under Construction)')
                 },
                 lastUpdated: 'Last Updated', // string | boolean 最后更新时间
                 // 默认为 "Edit this page" ， 编辑此页提示
