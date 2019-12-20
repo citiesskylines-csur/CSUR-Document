@@ -7,7 +7,7 @@ actionText: 快速上手 →
 actionLink: /guide/
 features:
 - title: 新特性
-  details: 左转专用道路（划掉）、BRT路，拥有完整的匝道接口模块合集，所有路均带有隧道模型和车道指示等。
+  details: ~~左转专用道路~~（划掉）、BRT路，拥有完整的匝道接口模块合集，所有路均带有隧道模型和车道指示等。
 - title: 模型与贴图改善
   details: 新版我们进一步改善了模型和贴图，实现更加真实的道路效果。
 - title: 自动导入
