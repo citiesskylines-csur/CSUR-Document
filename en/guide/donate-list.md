@@ -9,4 +9,4 @@
 
 |                              AliPay / WeChat / QQ                              |
 | :----------------------------------------------------------------------: |
-| <img src="https://i.loli.net/2019/12/20/5ZBuakxyinLsz42.jpg"/> |
+| <img src="https://i.loli.net/2019/12/20/5ZBuakxyinLsz42.jpg" width="300"/> |
