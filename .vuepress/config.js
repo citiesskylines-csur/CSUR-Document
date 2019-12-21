@@ -147,9 +147,9 @@ function getGuideSidebar(readmeTitle, startTitle, installTitle, faqTitle, donate
             title: startTitle,
             collapsable: false, // 展开侧边栏分组-上手指南
             children: [
-                ['/wiki/learn-core.md'], // 这样可以自定义本组在边栏显示的文字
-                ['/wiki/learn-compatibility.md'],
-                ['/wiki/learn-notice.md'],  
+                ['wiki/learn-core.md'], // 这样可以自定义本组在边栏显示的文字
+                ['wiki/learn-compatibility.md'],
+                ['wiki/learn-notice.md'],  
             ]
         },
         {
