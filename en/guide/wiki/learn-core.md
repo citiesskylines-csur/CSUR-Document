@@ -1,8 +1,4 @@
-
-
-# Getting Started
-CSUR (Cities: Skylines Urban Road) is a road building system developed for the game *Cities: Skylines*. CSUR helps players to more efficiently build realistic road infrastructures and massive road networks.
-
+# Learn the Core Mechanism
 
 ## Key Concepts of CSUR
 ### Vanilla game: road-based construction
@@ -46,23 +42,3 @@ The above text describes the naming of one-way modules. As for two-way modules, 
 
 ## Using CSUR road assets
 The functionality of a CSUR road asset is indicated in its thumbnail icon and the text description. One module may have multiple assets, corresponding to different styles and intended use (e.g, whether there is a bike lane or not).
-
-## Relationship with former releases
-The current CSUR system succeeds the [previous CSUR road pack in 2018](https://steamcommunity.com/workshop/filedetails/?id=1423096565) and the [even earlier CSUE road pack](https://steamcommunity.com/workshop/filedetails/?id=1206133771) in 2017. Substantial improvements have been made compared with these older road packs. All assets in the former releases ('18 CSUR and CSUE) were handcrafted piece by piece so their names were not as standardized as our current version. However, they still followed a consistent lane numbering scheme, which eases the connection and inter-conversion between the old versions and the new CSUR. Below is a list of corresponding lane numbers in the current and former versions of CSUR. *n* denotes the number of lanes in the module.
-
-| CSUR(2018) and CSUE | CSUR (2019) |
-|--|--|
-| *n*R4 | *n*R2 |
-|*n*R5 | *n*R3 |
-|*n*R5P | *n*R3P |
-|*n*R6 | *n*R4P |
-|*n*R7 | *n*R5P |
-|*n*R9 | *n*R7 |
-
-A complete reference table containing the standardized CSUR names for former road assets is given in [this link](compatibility.md). You may find it useful if you have been playing the former CSUR/CSUE and would like to switch to the new version.
-
-## Compatibility
-CSUR was designed to be completely independent of the Cities: Skylines vanilla road system to optimize user experience. This means that you can build your city using only CSUR road assets, which is also the recommended way to use it. This also indicate that we cannot guarantee compatability between a CSUR road asset and any other road asset not developed under the CSUR standard or software framework, although we have tried our best to maintain such compatibility. CSUR roads as were published in October 2019 are able to connect to all vanilla tiny, small, and medium roads without model glitches. When CSUR roads are connected to vanilla highways, the junction will sink below the road surface and vehicles will seem to be floating when passing the junction.
-
-## Limitations
-**There is no silver bullet.** The same applies when you're trying to choose the best tool to build your dream city. CSUR and its lane-based idea do have inherent limitations compared with the vanilla roads, which are mainly the side effects of not using nodes in the game. For example, building a diamond interchange can be very difficult and building a diverging diamond is almost impossible. The game mechanism constrains that the path of traffic is always parallel to the segment, so cars don't exact follow where lanes are drawn in ramp and shift modules. The worst case of such is that cars will glitch out of the road model. A non-exhaustive list of known issues are listed in this page (under construction). But generally speaking, if you play CSUR the way it's supposed to be used, [everything just works](https://www.youtube.com/watch?v=jVHcUVIwJW4&t=435s).

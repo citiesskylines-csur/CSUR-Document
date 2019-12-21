@@ -1,6 +1,6 @@
 ---
 home: true
-heroImage: /avatar_Gradients.webp
+heroImage: /avatar.webp
 heroText: 欢迎使用 CSUR
 tagline: 全新 CSUR 正在内测中
 actionText: 快速上手 →
