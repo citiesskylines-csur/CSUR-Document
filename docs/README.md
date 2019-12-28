@@ -10,6 +10,5 @@ footer: Copyright © 2019 CSUR Team
 
 <!-- <div class="footer">
     <p align="center">Copyright © 2019 amamIya</p>
-    <p>苏ICP备18045829号 -3</p>
 </div>
 -->
