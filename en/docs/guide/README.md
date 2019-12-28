@@ -2,13 +2,8 @@
 title: Getting Started
 ---
 
-<p align="center">
-<img alt="CSUR-LOGO" src="/assets/img/logo.png"/>
-</p>
-
-------------------------------
-
 # Introduction
+------------------------------
 
 * CSUR (Cities: Skylines Urban Road) is a road building system developed for the game *Cities: Skylines*. CSUR helps players to more efficiently build realistic road infrastructures and massive road networks.
 
