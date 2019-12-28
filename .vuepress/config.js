@@ -10,35 +10,36 @@ module.exports = {
         // 键名是该语言所属的子路径
         // 作为特例，默认语言可以使用 '/' 作为其路径。
         '/': {
-            lang: 'zh-Hans', // 将会被设置为 <html> 的 lang 属性
+            lang: 'zh-CN', // 将会被设置为 <html> 的 lang 属性
             title: '都市天际线城市道路 - CSUR',
-            description: '全新 CSUR 正在内测中 😏',
+            description: '利用全新CSUR在都市天际线中建造比拟现实的逼真道路，自动标线、平滑匝道、无缝衔接和UI选路等特性尽在CSUR。',
         },
         '/tw/': {
-            lang: 'zh-Hant', // 将会被设置为 <html> 的 lang 属性
+            lang: 'zh-TW', // 将会被设置为 <html> 的 lang 属性
             title: '都市天際線城市道路 - CSUR',
-            description: '全新 CSUR 正在內測中 😏',
+            description: '利用全新CSUR在都市天際線中建造比擬現實的逼真道路，自動標線、平滑匝道無縫銜接、UI選路等特性盡在CSUR。',
         },
         '/en/': {
             lang: 'en',
             title: 'Cities Skylines Urban Road - CSUR',
-            description: 'All-new version of CSUR is in beta.',
+            description: 'Use the new CSUR to build realistic roads that are more realistic in the urban skyline. Features such as automatic marking, smooth ramps, seamless connections and UI routing are all in CSUR.',
         },
         '/ja/': {
             lang: 'ja',
             title: '都市スカイライン都市道路 - CSUR',
-            description: '新版CSURはもうテスト段階になりました。',
+            description: 'CSURを使ってCities:Skylinesで真実な道を作ります。自動的に道路の標識線を追加し、滑らかなランプ、シームレスな接続、及びセットMODで道を選択することを含みます。',
           }
     },
     
     // ico图标
     head: [
-        ['link', { rel: 'icon', href: '/ico.png' }]
+        ['meta', { name: 'keywords', content: 'CSUR, CSUE, 城市道路, 都市天际线, 道路模组, 中式道路, 都市道路, amamlya, Cities Skylines, Mod, 模组, テイーズスカイライン'}],
+        ['link', { rel: 'icon', href: '/assets/img/ico.svg' }]
     ],
 
     // 主题配置
     themeConfig: {
-        logo: '/logo.png',
+        logo: '/assets/img/logo.png',
         smoothScroll: true, // 平滑滚动
         algolia: { // 配置 Algolia 搜索
             apiKey: '5e462462c53fab53286a9ddc5ef386b1',
@@ -74,8 +75,8 @@ module.exports = {
                 label: '简体中文',
                 nav: require('./nav/zh'),
                 sidebar: {
-                    '/guide/': getGuideSidebar('前言','上手指南','安装','FAQ','捐赠'),
-                    '/develop/': getDevelopSidebar('施工中')
+                    '/docs/guide/': getGuideSidebar('前言','上手指南','安装','FAQ','捐赠'),
+                    '/docs/dev/': getDevelopSidebar('施工中')
                 },
                 // 默认为 "Edit this page" ， 编辑此页提示
                 editLinkText: '在 GitHub 上编辑此页',
@@ -89,8 +90,8 @@ module.exports = {
                 label: '正體中文',
                 nav: require('./nav/tw'),
                 sidebar: {
-                    '/tw/guide/': getGuideSidebar('前言','上手指南','安裝','FAQ','捐贈'),
-                    '/tw/develop/': getDevelopSidebar('施工中')
+                    '/tw/docs/guide/': getGuideSidebar('前言','上手指南','安裝','FAQ','捐贈'),
+                    '/tw/docs/dev/': getDevelopSidebar('施工中')
                 },
                 // 默认为 "Edit this page" ， 编辑此页提示
                 editLinkText: '在 GitHub 上編輯此頁',
@@ -104,8 +105,8 @@ module.exports = {
                 label: 'English',
                 nav: require('./nav/en'),
                 sidebar: {
-                    '/en/guide/': getGuideSidebar('Perface','Getting Started','Install','FAQ','Donate'),
-                    '/en/develop/': getDevelopSidebar('Under Construction)')
+                    '/en/docs/guide/': getGuideSidebar('Perface','Getting Started','Install','FAQ','Donate'),
+                    '/en/docs/dev/': getDevelopSidebar('Under Construction)')
                 },
                 lastUpdated: 'Last Updated', // string | boolean 最后更新时间
                 // 默认为 "Edit this page" ， 编辑此页提示
@@ -120,8 +121,8 @@ module.exports = {
                 label: '日本語',
                 nav: require('./nav/ja'),
                 sidebar: {
-                    '/ja/guide/': getGuideSidebar('序文','入門ガイド','インストールする','FAQ','寄付する'),
-                    '/ja/develop/': getDevelopSidebar('建設中')
+                    '/ja/docs/guide/': getGuideSidebar('序文','入門ガイド','インストールする','FAQ','寄付する'),
+                    '/ja/docs/dev/': getDevelopSidebar('建設中')
                 },
                 lastUpdated: '最終更新', // string | boolean 最后更新时间
                 // 默认为 "Edit this page" ， 编辑此页提示
@@ -147,16 +148,16 @@ function getGuideSidebar(readmeTitle, startTitle, installTitle, faqTitle, donate
             title: startTitle,
             collapsable: false, // 展开侧边栏分组-上手指南
             children: [
-                'wiki/learn-core.md', // 这样可以自定义本组在边栏显示的文字
-                'wiki/learn-compatibility.md',
-                'wiki/learn-notice.md',  
+                'core.md', // 这样可以自定义本组在边栏显示的文字
+                'compatibility.md',
+                'notice.md',  
             ]
         },
         {
             title: installTitle,
             collapsable: false, // 展开侧边栏分组-如何安装
             children: [
-                'how-to-install'
+                'install'
             ]
         },
         {

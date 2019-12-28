@@ -1,13 +1,13 @@
 module.exports = [
     // 導航欄鏈接
-    { text: '指南', link: '/tw/guide/' },
+    { text: '指南', link: '/tw/docs/guide/' },
     { text: '論壇', link: 'https://bbs.csur.fun', target: '_self', rel:'next' },
     {
         text: '更多',
         items: [
             { text: '手冊', items: [
-                { text: '常見問題', link: '/tw/guide/faq' },
-                { text: '開發指南', link: '/tw/develop/' },
+                { text: '常見問題', link: '/tw/docs/guide/faq' },
+                { text: '開發指南', link: '/tw/docs/dev/' },
             ] },
             { text: '討論', items: [
                 { text: 'QQ群', link: 'https://jq.qq.com/?_wv=1027&k=5wOzDNM', target:'_blank' },

@@ -1,10 +1,9 @@
 ---
 title: 上手指南
-lang: zh-CN
 ---
 
 <p align="center">
-<img alt="LOGO" src="/logo.png"/>
+<img alt="CSUR-LOGO" src="/assets/img/logo.png"/>
 </p>
 
 ------------------------------

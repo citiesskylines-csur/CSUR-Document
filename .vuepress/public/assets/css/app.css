@@ -1,0 +1,1143 @@
+.animated, .home .Header {
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-duration: 0.5s;
+  animation-duration: 0.5s;
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.fadeIn {
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
+}
+
+@-webkit-keyframes fadeUp {
+  0% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeUp {
+  0% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fadeUp {
+  -webkit-animation-name: fadeUp;
+  animation-name: fadeUp;
+}
+
+@-webkit-keyframes fadeDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fadeDown,
+.home .Header {
+  -webkit-animation-name: fadeDown;
+  animation-name: fadeDown;
+}
+
+body {
+  background: #fff;
+  color: #7E96B3;
+  margin: 0;
+  padding: 0;
+  line-height: 1.5;
+  font-size: 16px;
+}
+
+body, input, select, textarea, button {
+  font-family: "Source Sans Pro", Helvetica, Arial, sans-serif;
+}
+
+body{
+	width: 100%;
+}
+
+.container {
+  max-width: 1040px;
+  margin: 0 auto;
+  padding: 0 20px;
+  overflow: hidden;
+}
+
+a {
+  color: #7E96B3;
+  text-decoration: none;
+  border-bottom: 1px solid;
+  border-color: #CCD6E4;
+  padding-bottom: 1px;
+  transition: border-color 0.2s, color 0.2s;
+}
+
+a:hover {
+  border-color: #E7672E;
+  color: #E7672E;
+}
+
+h2 {
+  font-size: 36px;
+  color: #E7672E;
+  font-weight: normal;
+}
+
+.lead {
+  font-size: 120%;
+}
+
+.Button {
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: normal;
+  border: 2px solid #CCD6E4;
+  border-radius: 6px;
+  padding: 15px 30px;
+  display: inline-block;
+  line-height: 1em;
+}
+
+.Header {
+  overflow: hidden;
+  border-top: 6px solid #E7742E;
+  padding: 30px 0;
+  border-image: -webkit-linear-gradient(to right,#2cb51d, #dd4add, #05a6dd, #e8800f)1 10 1; /* 控制边框颜色渐变 */
+  border-image: -moz-linear-gradient(to right,#2cb51d, #dd4add, #05a6dd, #e8800f)1 10 1;
+  border-image: linear-gradient(to right,#2cb51d, #dd4add, #05a6dd, #e8800f)1 10 1; /* 标准的必须写在最后 */
+}
+
+.Header-brand {
+  float: left;
+  margin: 0;
+}
+
+.Header-brand a {
+  border: 0;
+}
+
+.Header-brand img {
+  display: block;
+  margin: 0 auto;
+}
+
+.Header-nav {
+  float: right;
+  margin-top: 8px;
+}
+
+.Header-nav a {
+  border: 0;
+  margin: 0 10px;
+  margin-bottom: 5px;
+  display: inline-block;
+}
+
+.Header-nav a.active {
+  color: #E7742E;
+}
+
+@media only screen and (max-width: 700px) {
+  .Header {
+    padding: 15px 0;
+    text-align: center;
+  }
+
+  .Header-brand,
+  .Header-nav {
+    float: none;
+  }
+
+  .Header-brand {
+    margin-bottom: 20px;
+  }
+}
+
+.Hero {
+  background: #EFF2F6;
+  border: dotted #fff;
+  border-width: 2px 0;
+  padding: 40px 0;
+  color: #7E96B3;
+}
+
+.Hero h2 {
+  color: #536F90;
+  font-size: 35px;
+  margin: 0;
+}
+
+.Hero p {
+  font-size: 20px;
+  margin: 0.5em 0 0;
+}
+
+@media only screen and (max-width: 700px) {
+  .Hero {
+    padding: 20px 0;
+  }
+}
+
+.Footer {
+  text-align: center;
+  margin: 100px 0;
+  line-height: 2em;
+}
+
+.Footer a {
+  border: 0;
+}
+
+.Footer-nav {
+  margin-bottom: 5px;
+}
+
+.Footer-nav a,
+.Footer-copyright span {
+  margin: 0 8px;
+}
+
+@media only screen and (max-width: 700px) {
+  .Footer {
+    margin: 30px 0;
+  }
+}
+
+.story {
+  font-size: 20px;
+  color: #444;
+  padding-top: 20px;
+}
+
+.story h2 {
+  color: #444;
+  font-size: 28px;
+  font-weight: 600;
+  margin: 1em 0 0.5em;
+}
+
+.animated, .home .Header {
+  animation-delay: 1.9s;
+  -webkit-animation-delay: 1.9s;
+  -moz-animation-delay: 1.9s;
+  -o-animation-delay: 1.9s;
+}
+
+.Intro {
+  text-align: center;
+  margin-bottom: 100px;
+}
+
+.home .Header {
+  padding: 0;
+  border: 0;
+  text-align: center;
+}
+
+.home .Header-brand {
+  display: none;
+}
+
+.home .Header-nav {
+  float: none;
+  margin-top: 30px;
+}
+
+.home .Header-nav a {
+  border: 0;
+  color: #B0BED1;
+  margin: 0 10px 5px;
+}
+
+.home .Header-nav a:hover {
+  color: #E7672E;
+}
+
+.Intro-brand {
+  margin: 85px 0 0 0;
+  line-height: 1em;
+}
+
+.Intro-beta {
+  margin: 0 auto;
+  width: 298px;
+  text-align: right;
+  text-transform: uppercase;
+  font-size: 18px;
+  color: #B0BED1;
+}
+
+.Intro h2 {
+  color: #3C5675;
+  background: none;
+  margin-bottom: 15px;
+}
+
+.Intro p {
+  max-width: 460px;
+  font-size: 20px;
+  margin: 0 auto 40px;
+}
+
+.Intro-actions a {
+  margin: 0 4px 10px;
+}
+
+p.lang{
+	color: #aaabab;
+    text-align: center;
+	font-size: 0.8125rem;
+}
+
+.lang a{
+	text-decoration: none;
+	border: none;
+}
+
+
+.Home-screenshot {
+  margin: 0 20px;
+  height: 350px;
+  overflow: hidden;
+  border-bottom: 5px solid #FFFFFF;
+}
+
+.Home-screenshot img {
+  max-width: 100%;
+  display: block;
+  margin: 0 auto;
+}
+
+@media only screen and (max-width: 700px) {
+  .Intro {
+    padding: 0 20px;
+    margin-bottom: 20px;
+  }
+
+  .Intro-brand {
+    margin-top: 30px;
+  }
+
+  .Intro-brand object,
+  .Intro-brand img,
+  .Intro-beta {
+    width: 200px;
+  }
+
+  .Intro h2 {
+    font-size: 30px;
+  }
+
+  .Intro-actions a {
+    display: block;
+  }
+
+  .Home-screenshot {
+    display: none;
+  }
+}
+
+.Features {
+  background: #EFF2F6;
+  padding: 60px 0;
+  text-align: center;
+}
+
+.Features-text {
+  font-size: 20px;
+  color: #3C5675;
+  max-width: 590px;
+  margin-top: 0;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 20px;
+}
+
+.Features-actions .Button {
+  border-color: #E7672E;
+  color: #E7672E;
+}
+
+.Features-actions .Button:hover {
+  border-color: #B42800;
+  color: #B42800;
+}
+
+.Carousel {
+  height: 80px;
+  position: relative;
+  white-space: nowrap;
+  overflow: hidden;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.Carousel:after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  content: " ";
+  background-image: linear-gradient(to right, #eff2f6 0%, rgba(239, 242, 246, 0) 50%, #eff2f6 100%);
+}
+
+.CarouselGroup {
+  display: inline-block;
+}
+
+.CarouselItem {
+  display: inline-block;
+  vertical-align: top;
+  width: 130px;
+  padding: 0 10px;
+  white-space: normal;
+}
+
+.CarouselItem-icon {
+  margin-bottom: 10px;
+}
+
+@media only screen and (max-width: 700px) {
+  .Features {
+    padding: 30px 0;
+  }
+
+  .CarouselItem {
+    width: 75px;
+  }
+}
+
+.Team {
+  text-align: center;
+  padding: 60px 0;
+}
+
+.Team-members {
+  margin-bottom: 30px;
+}
+
+.Team-member {
+  display: inline-block;
+  width: 190px;
+  vertical-align: top;
+}
+
+.Team-member h3 {
+  margin: 0;
+}
+
+.Team-member h3 a {
+  border: 0;
+  color: #E7672E;
+  font-weight: normal;
+  font-size: 20px;
+}
+
+.Team-member h3 img {
+  display: block;
+  margin: 0 auto 10px;
+}
+
+.Team-member h4 {
+  font-weight: normal;
+  font-size: 16px;
+  margin: 0;
+}
+
+.Team-text {
+  font-size: 20px;
+  color: #3C5675;
+  max-width: 620px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 20px;
+}
+
+@media only screen and (max-width: 700px) {
+  .Team {
+    padding: 30px 0;
+  }
+
+  .Team-member {
+    width: 150px;
+  }
+}
+
+.Actions {
+  background-image: linear-gradient(to bottom, #eff2f6 0%, rgba(239, 242, 246, 0) 250px);
+  padding: 60px 0;
+}
+
+.Actions-item {
+  width: 33%;
+  padding: 0 35px;
+  box-sizing: border-box;
+  float: left;
+  text-align: center;
+}
+
+.Actions-item h3 {
+  font-weight: normal;
+  font-size: 30px;
+  color: #E7672E;
+  margin: 0 0 10px;
+}
+
+.Actions-item h4 {
+  font-weight: normal;
+  font-size: 20px;
+  color: #3C5675;
+  margin: 0;
+}
+
+.Actions-item p {
+  margin: 0.5em 0 1.5em;
+}
+
+@media only screen and (max-width: 700px) {
+  .Actions {
+    padding: 30px 0;
+  }
+
+  .Actions-item {
+    width: auto;
+    float: none;
+    margin-bottom: 30px;
+    padding: 0;
+  }
+}
+
+.features {
+  min-width: 930px;
+}
+
+.Hero--features {
+  text-align: center;
+  padding: 60px 0;
+}
+
+.Feature {
+  padding: 50px 0 0;
+}
+
+.Feature:not(.Feature--first) {
+  background-image: linear-gradient(to bottom, #eff2f6 0%, rgba(239, 242, 246, 0) 250px);
+}
+
+.Feature-header {
+  text-align: center;
+}
+
+.Feature-header h3 {
+  font-size: 37px;
+  color: #E7672E;
+  font-weight: normal;
+  margin: 0.25em 0;
+}
+
+.Feature-header p {
+  font-size: 20px;
+  color: #536F90;
+  max-width: 600px;
+  margin: 0.5em auto 0;
+}
+
+.Screenshot {
+  color: #888;
+  overflow: hidden;
+  margin: 75px 0;
+}
+
+.Screenshot h4 {
+  color: #444;
+  font-size: 18px;
+  font-weight: 600;
+  margin: 4em 0 0;
+}
+
+.Screenshot h4:first-child,
+.Screenshot .ComingSoonLabel + h4 {
+  margin-top: 0;
+}
+
+.Screenshot p {
+  margin: 0.5em 0 1em;
+  font-size: 1.1em;
+}
+
+.Screenshot--right .Screenshot-image {
+  float: right;
+  background-repeat: no-repeat;
+  background-position: top left;
+  width: 50%;
+  margin: 0;
+}
+
+.Screenshot--right .Screenshot-text {
+  width: 300px;
+  float: right;
+  margin: 15px 100px 0 0;
+}
+
+.Screenshot--left .Screenshot-image {
+  float: left;
+  background-repeat: no-repeat;
+  background-position: top right;
+  width: 50%;
+  margin: 0;
+  text-align: right;
+}
+
+.Screenshot--left .Screenshot-text {
+  width: 300px;
+  float: left;
+  margin: 15px 0 0 100px;
+}
+
+.Screenshot--center .Screenshot-image {
+  background-repeat: no-repeat;
+  background-position: top center;
+  margin: 0;
+}
+
+.Screenshot--center .Screenshot-text {
+  width: 425px;
+  text-align: center;
+  margin: 50px auto 25px;
+}
+
+.Screenshot--dark,
+.Screenshot--dark h4 {
+  color: #fff;
+}
+
+.Screenshot--uiPane .Screenshot-image {
+  width: 55%;
+  height: 399px;
+  background-size: 1001px 399px;
+  background-image: url(/img/features/screenshots/ui-pane.png);
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-resolution: 144dpi), (-webkit-min-device-pixel-ratio: 144), (min-resolution: 144dppx) {
+  .Screenshot--uiPane .Screenshot-image {
+    background-image: url(/img/features/screenshots/ui-pane_2x.png);
+  }
+}
+
+.Screenshot--uiPane .Screenshot-text {
+  margin-top: 50px;
+}
+
+.Screenshot--uiScrolling .Screenshot-image {
+  width: 55%;
+  height: 371px;
+  background-size: 655px 371px;
+  background-image: url(/img/features/screenshots/ui-scrolling.png);
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-resolution: 144dpi), (-webkit-min-device-pixel-ratio: 144), (min-resolution: 144dppx) {
+  .Screenshot--uiScrolling .Screenshot-image {
+    background-image: url(/img/features/screenshots/ui-scrolling_2x.png);
+  }
+}
+
+.Screenshot--uiScrolling .Screenshot-text {
+  margin-top: 50px;
+}
+
+.Screenshot--uiComposer {
+  margin-bottom: 0;
+}
+
+.Screenshot--uiComposer .Screenshot-image {
+  height: 331px;
+  background-size: 932px 331px;
+  background-image: url(/img/features/screenshots/ui-composer.png);
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-resolution: 144dpi), (-webkit-min-device-pixel-ratio: 144), (min-resolution: 144dppx) {
+  .Screenshot--uiComposer .Screenshot-image {
+    background-image: url(/img/features/screenshots/ui-composer_2x.png);
+  }
+}
+
+.Screenshot--touch .Screenshot-image {
+  height: 591px;
+  background-size: 689px 591px;
+  background-image: url(/img/features/screenshots/touch.png);
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-resolution: 144dpi), (-webkit-min-device-pixel-ratio: 144), (min-resolution: 144dppx) {
+  .Screenshot--touch .Screenshot-image {
+    background-image: url(/img/features/screenshots/touch_2x.png);
+  }
+}
+
+.Screenshot--touch .Screenshot-text {
+  margin-top: 50px;
+}
+
+.Screenshot--touchCode {
+  background: #272722;
+  margin-bottom: 0;
+}
+
+.Screenshot--touchCode .Screenshot-image {
+  height: 296px;
+  background-size: 530px 296px;
+  background-image: url(/img/features/screenshots/touch-code.png);
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-resolution: 144dpi), (-webkit-min-device-pixel-ratio: 144), (min-resolution: 144dppx) {
+  .Screenshot--touchCode .Screenshot-image {
+    background-image: url(/img/features/screenshots/touch-code_2x.png);
+  }
+}
+
+.Screenshot--touchCode .Screenshot-text {
+  margin-top: 75px;
+}
+
+.Screenshot--fastSize .Screenshot-text {
+  margin-top: 0;
+}
+
+.Screenshot--fastSize .Screenshot-image {
+  width: 50%;
+}
+
+.SizeBars {
+  margin: 1em 0;
+  padding: 0;
+  list-style: none;
+  font-size: 13px;
+  color: #7E96B3;
+}
+
+.SizeBars li {
+  margin-bottom: 18px;
+  padding-left: 80px;
+}
+
+.SizeBars strong {
+  float: left;
+  margin-left: -80px;
+  font-weight: normal;
+}
+
+.SizeBars strong a {
+  border: 0;
+}
+
+.SizeBar {
+  display: inline-block;
+  vertical-align: middle;
+  width: 185px;
+  white-space: nowrap;
+}
+
+.SizeBar-bar {
+  border: 2px solid #AEC2DA;
+  height: 17px;
+  display: inline-block;
+  vertical-align: middle;
+  border-radius: 4px;
+}
+
+.SizeBars-highlight {
+  color: #E7672E;
+}
+
+.SizeBars-highlight .SizeBar-bar {
+  border-color: #E7562E;
+}
+
+.SizeBar-number {
+  margin-left: 15px;
+  vertical-align: -2px;
+}
+
+.Screenshot--fastTrust .Screenshot-text {
+  margin-top: 0;
+}
+
+.Screenshot--fastTrust .Screenshot-image {
+  width: 50%;
+  padding-top: 30px;
+}
+
+.Screenshot--fastTrust .Screenshot-image a {
+  border: 0;
+  margin-left: 40px;
+}
+
+.Screenshot--fastTrust .Screenshot-image a img {
+  vertical-align: middle;
+}
+
+.Screenshot--installation .Screenshot-text {
+  margin-top: 30px;
+}
+
+.Screenshot--installation .Screenshot-image {
+  width: 47%;
+  height: 445px;
+  background-size: 403px 445px;
+  background-image: url(/img/features/screenshots/installation.png);
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-resolution: 144dpi), (-webkit-min-device-pixel-ratio: 144), (min-resolution: 144dppx) {
+  .Screenshot--installation .Screenshot-image {
+    background-image: url(/img/features/screenshots/installation_2x.png);
+  }
+}
+
+.ComingSoonLabel {
+  background: #9565D1;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 11px;
+  padding: 4px 6px;
+  font-weight: bold;
+  border-radius: 4px;
+  line-height: 1em;
+  margin-top: 30px;
+  margin-bottom: 15px;
+  display: inline-block;
+}
+
+.Screenshot--extensible .Screenshot-image {
+  height: 309px;
+  background-size: 1010px 309px;
+  background-image: url(/img/features/screenshots/extensible.png);
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-resolution: 144dpi), (-webkit-min-device-pixel-ratio: 144), (min-resolution: 144dppx) {
+  .Screenshot--extensible .Screenshot-image {
+    background-image: url(/img/features/screenshots/extensible_2x.png);
+  }
+}
+
+.Screenshot--extensibleApi .Screenshot-image {
+  width: 50%;
+  height: 216px;
+  background-size: 684px 216px;
+  background-image: url(/img/features/screenshots/extensible-api.png);
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-resolution: 144dpi), (-webkit-min-device-pixel-ratio: 144), (min-resolution: 144dppx) {
+  .Screenshot--extensibleApi .Screenshot-image {
+    background-image: url(/img/features/screenshots/extensible-api_2x.png);
+  }
+}
+
+.Screenshot--extensibleArchitecture .Screenshot-image {
+  width: 45%;
+  height: 308px;
+  background-size: 333px 308px;
+  background-image: url(/img/features/screenshots/extensible-architecture.png);
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-resolution: 144dpi), (-webkit-min-device-pixel-ratio: 144), (min-resolution: 144dppx) {
+  .Screenshot--extensibleArchitecture .Screenshot-image {
+    background-image: url(/img/features/screenshots/extensible-architecture_2x.png);
+  }
+}
+
+.Screenshot--extensibleArchitecture .Screenshot-text {
+  margin-top: 50px;
+}
+
+.Screenshot--themeable .Screenshot-image {
+  height: 261px;
+  background-size: 1451px 261px;
+  background-image: url(/img/features/screenshots/themeable.png);
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-resolution: 144dpi), (-webkit-min-device-pixel-ratio: 144), (min-resolution: 144dppx) {
+  .Screenshot--themeable .Screenshot-image {
+    background-image: url(/img/features/screenshots/themeable_2x.png);
+  }
+}
+
+.Screenshot--themeableAdmin .Screenshot-image {
+  height: 456px;
+  background-size: 667px 456px;
+  background-image: url(/img/features/screenshots/themeable-admin.png);
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-resolution: 144dpi), (-webkit-min-device-pixel-ratio: 144), (min-resolution: 144dppx) {
+  .Screenshot--themeableAdmin .Screenshot-image {
+    background-image: url(/img/features/screenshots/themeable-admin_2x.png);
+  }
+}
+
+.Screenshot--themeableAdmin .Screenshot-text {
+  margin-top: 50px;
+}
+
+.Screenshot--notifications .Screenshot-image {
+  height: 403px;
+  background-size: 452px 403px;
+  background-image: url(/img/features/screenshots/notifications.png);
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-resolution: 144dpi), (-webkit-min-device-pixel-ratio: 144), (min-resolution: 144dppx) {
+  .Screenshot--notifications .Screenshot-image {
+    background-image: url(/img/features/screenshots/notifications_2x.png);
+  }
+}
+
+.Screenshot--notifications .Screenshot-text {
+  margin-top: 50px;
+}
+
+.Screenshot--notificationsPreferences .Screenshot-image {
+  height: 371px;
+  background-size: 494px 371px;
+  background-image: url(/img/features/screenshots/notifications-preferences.png);
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-resolution: 144dpi), (-webkit-min-device-pixel-ratio: 144), (min-resolution: 144dppx) {
+  .Screenshot--notificationsPreferences .Screenshot-image {
+    background-image: url(/img/features/screenshots/notifications-preferences_2x.png);
+  }
+}
+
+.Screenshot--notificationsPreferences .Screenshot-text {
+  margin-top: 50px;
+}
+
+.Screenshot--tags .Screenshot-image {
+  height: 332px;
+  background-size: 416px 332px;
+  background-image: url(/img/features/screenshots/tags.png);
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-resolution: 144dpi), (-webkit-min-device-pixel-ratio: 144), (min-resolution: 144dppx) {
+  .Screenshot--tags .Screenshot-image {
+    background-image: url(/img/features/screenshots/tags_2x.png);
+  }
+}
+
+.Screenshot--tagsPicker {
+  background: #4F6683;
+  margin-bottom: 0;
+}
+
+.Screenshot--tagsPicker .Screenshot-image {
+  height: 404px;
+  background-size: 652px 404px;
+  background-image: url(/img/features/screenshots/tags-picker.png);
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-resolution: 144dpi), (-webkit-min-device-pixel-ratio: 144), (min-resolution: 144dppx) {
+  .Screenshot--tagsPicker .Screenshot-image {
+    background-image: url(/img/features/screenshots/tags-picker_2x.png);
+  }
+}
+
+.Screenshot--tagsPicker .Screenshot-text {
+  margin-top: 125px;
+}
+
+.Screenshot--mentionsComposer .Screenshot-image {
+  height: 239px;
+  background-size: 606px 239px;
+  background-image: url(/img/features/screenshots/mentions-composer.png);
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-resolution: 144dpi), (-webkit-min-device-pixel-ratio: 144), (min-resolution: 144dppx) {
+  .Screenshot--mentionsComposer .Screenshot-image {
+    background-image: url(/img/features/screenshots/mentions-composer_2x.png);
+  }
+}
+
+.Screenshot--mentionsPreview .Screenshot-image {
+  height: 231px;
+  background-size: 562px 231px;
+  background-image: url(/img/features/screenshots/mentions-preview.png);
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-resolution: 144dpi), (-webkit-min-device-pixel-ratio: 144), (min-resolution: 144dppx) {
+  .Screenshot--mentionsPreview .Screenshot-image {
+    background-image: url(/img/features/screenshots/mentions-preview_2x.png);
+  }
+}
+
+.Screenshot--mentionsReplies .Screenshot-image {
+  height: 261px;
+  background-size: 560px 261px;
+  background-image: url(/img/features/screenshots/mentions-replies.png);
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-resolution: 144dpi), (-webkit-min-device-pixel-ratio: 144), (min-resolution: 144dppx) {
+  .Screenshot--mentionsReplies .Screenshot-image {
+    background-image: url(/img/features/screenshots/mentions-replies_2x.png);
+  }
+}
+
+.Screenshot--permissions .Screenshot-image {
+  height: 423px;
+  background-size: 885px 423px;
+  background-image: url(/img/features/screenshots/permissions.png);
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-resolution: 144dpi), (-webkit-min-device-pixel-ratio: 144), (min-resolution: 144dppx) {
+  .Screenshot--permissions .Screenshot-image {
+    background-image: url(/img/features/screenshots/permissions_2x.png);
+  }
+}
+
+.OtherFeatures {
+  overflow: hidden;
+  margin-top: 25px;
+}
+
+.OtherFeature {
+  float: left;
+  width: 50%;
+  height: 250px;
+  box-sizing: border-box;
+  padding: 0 50px;
+  color: #888;
+  font-size: 1.1em;
+}
+
+.OtherFeature h4 {
+  color: #444;
+  font-size: 18px;
+  font-weight: 600;
+  margin: 1em 0 0;
+}
+
+.OtherFeatures-actions {
+  text-align: center;
+  padding: 50px 0;
+}
+
+.OtherFeatures-actions a {
+  margin: 0 4px;
+}
+
+.ComingSoon {
+  background: #EFF2F6;
+  text-align: center;
+  padding: 40px 0;
+}
+
+.ComingSoon h3 {
+  color: #536F90;
+  font-weight: normal;
+  font-size: 22px;
+  margin: 0;
+}
+
+.ComingSoon-items {
+  overflow: hidden;
+  max-width: 750px;
+  margin: 50px auto 0;
+}
+
+.ComingSoon-item {
+  display: inline-block;
+  width: 120px;
+  height: 120px;
+  vertical-align: top;
+}
+
+.ComingSoon-item img {
+  display: block;
+  margin: 0 auto 10px;
+}
+
+.Download {
+  margin-top: 50px;
+  margin-bottom: 70px;
+  font-size: 18px;
+  color: #444;
+  padding-right: 450px;
+  overflow: hidden;
+}
+
+@media only screen and (max-width: 700px) {
+  .Download {
+    margin-right: 0;
+  }
+}
+
+.Download p.lead {
+  margin-top: 0;
+}
+
+.Download-instructions {
+  float: right;
+  width: 400px;
+  margin-right: -450px;
+  color: #7E96B3;
+}
+
+.Download-instructions h3 {
+  margin-top: 0;
+  font-weight: normal;
+}
+
+@media only screen and (max-width: 700px) {
+  .Download-instructions {
+    float: none;
+    margin-right: 0;
+    width: auto;
+  }
+}
+

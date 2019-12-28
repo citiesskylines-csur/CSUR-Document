@@ -1,13 +1,13 @@
 module.exports = [
     // 导航栏链接
-    { text: '指南', link: '/guide/' },
+    { text: '指南', link: '/docs/guide/' },
     { text: '论坛', link: 'https://bbs.csur.fun', target:'_self', rel:'next' },
     {
         text: '更多',
         items: [
             { text: '手册', items: [
-                { text: '常见问题', link: '/guide/faq' },
-                { text: '开发指南', link: '/develop/' },
+                { text: '常见问题', link: '/docs/guide/faq' },
+                { text: '开发指南', link: '/docs/dev/' },
             ] },
             { text: '讨论', items: [
                 { text: 'QQ群', link: 'https://jq.qq.com/?_wv=1027&k=5wOzDNM', target:'_blank' },
