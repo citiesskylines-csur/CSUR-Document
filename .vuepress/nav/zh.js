@@ -1,5 +1,6 @@
 module.exports = [
     // 导航栏链接
+    { text: '首页', link: 'https://csur.fun/' },
     { text: '指南', link: '/docs/guide/' },
     { text: '论坛', link: 'https://bbs.csur.fun', target:'_self', rel:'next' },
     {

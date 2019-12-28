@@ -9,20 +9,20 @@ module.exports = {
     locales: {
         // 键名是该语言所属的子路径
         // 作为特例，默认语言可以使用 '/' 作为其路径。
-        '/': {
+        '/docs/': {
             lang: 'zh-CN', // 将会被设置为 <html> 的 lang 属性
             title: 'CSUR 文档',
         },
-        '/tw/': {
+        '/tw/docs/': {
             lang: 'zh-TW', // 将会被设置为 <html> 的 lang 属性
             title: 'CSUR 文檔',
             description: '',
         },
-        '/en/': {
+        '/en/docs/': {
             lang: 'en',
             title: 'CSUR Documentation',
         },
-        '/ja/': {
+        '/ja/docs/': {
             lang: 'ja',
             title: 'CSURドキュメント',
           }
@@ -36,7 +36,7 @@ module.exports = {
 
     // 主题配置
     themeConfig: {
-        logo: '/assets/img/logo.png',
+        logo: '/assets/img/bbs-logo.webp', // 191228,隐藏左上角logo
         smoothScroll: true, // 平滑滚动
         algolia: { // 配置 Algolia 搜索
             apiKey: '5e462462c53fab53286a9ddc5ef386b1',
@@ -65,7 +65,7 @@ module.exports = {
 
         // 多语言配置
         locales: {
-            '/': {
+            '/docs/': {
                 // 多语言下拉菜单的标题
                 selectText: '🌏选择语言',
                 // 该语言在下拉菜单中的标签
@@ -80,7 +80,7 @@ module.exports = {
                 // 最后更新时间
                 lastUpdated: '上次更新' // string | boolean
             },
-            '/tw/': {
+            '/tw/docs/': {
                 // 多语言下拉菜单的标题
                 selectText: '🌏選擇語言',
                 // 该语言在下拉菜单中的标签
@@ -95,7 +95,7 @@ module.exports = {
                 // 最后更新时间
                 lastUpdated: '上次更新' // string | boolean
             },
-            '/en/': {
+            '/en/docs/': {
                 // 多语言下拉菜单的标题
                 selectText: '🌏Language',
                 // 该语言在下拉菜单中的标签
@@ -111,7 +111,7 @@ module.exports = {
                 // 最后更新时间
                 lastUpdated: 'Last Updated' // string | boolean
             },
-            '/ja/': {
+            '/ja/docs/': {
                 // 多语言下拉菜单的标题
                 selectText: '🌏使用言語',
                 // 该语言在下拉菜单中的标签

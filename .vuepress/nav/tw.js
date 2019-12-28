@@ -1,5 +1,6 @@
 module.exports = [
     // 導航欄鏈接
+    { text: '首頁', link: 'https://csur.fun/tw/' },
     { text: '指南', link: '/tw/docs/guide/' },
     { text: '論壇', link: 'https://bbs.csur.fun', target: '_self', rel:'next' },
     {
