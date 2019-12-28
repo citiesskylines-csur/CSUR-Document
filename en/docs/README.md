@@ -2,7 +2,6 @@
 home: true
 heroImage: /assets/img/banner.webp
 heroText: CSUR Documentation
-tagline: Available in English, 中文, 日本語
 footer: Copyright © 2019 CSUR Team
 ---
 
