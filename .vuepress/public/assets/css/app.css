@@ -271,10 +271,10 @@ h2 {
 }
 
 .animated, .home .Header {
-  animation-delay: 0s;   /* 0.9s */
-  -webkit-animation-delay: 0s;
-  -moz-animation-delay: 0s;
-  -o-animation-delay: 0s;
+  animation-delay: 0.2s;   /* 0.9s */
+  -webkit-animation-delay: 0.2s;
+  -moz-animation-delay: 0.2s;
+  -o-animation-delay: 0.2s;
 }
 
 .Intro {
