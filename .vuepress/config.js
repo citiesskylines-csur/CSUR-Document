@@ -11,29 +11,26 @@ module.exports = {
         // 作为特例，默认语言可以使用 '/' 作为其路径。
         '/': {
             lang: 'zh-CN', // 将会被设置为 <html> 的 lang 属性
-            title: '都市天际线城市道路 - CSUR',
-            description: '利用全新CSUR在都市天际线中建造比拟现实的逼真道路，自动标线、平滑匝道、无缝衔接和UI选路等特性尽在CSUR。',
+            title: 'CSUR 文档',
         },
         '/tw/': {
             lang: 'zh-TW', // 将会被设置为 <html> 的 lang 属性
-            title: '都市天際線城市道路 - CSUR',
-            description: '利用全新CSUR在都市天際線中建造比擬現實的逼真道路，自動標線、平滑匝道無縫銜接、UI選路等特性盡在CSUR。',
+            title: 'CSUR 文檔',
+            description: '',
         },
         '/en/': {
             lang: 'en',
-            title: 'Cities Skylines Urban Road - CSUR',
-            description: 'Use the new CSUR to build realistic roads that are more realistic in the urban skyline. Features such as automatic marking, smooth ramps, seamless connections and UI routing are all in CSUR.',
+            title: 'CSUR Documentation',
         },
         '/ja/': {
             lang: 'ja',
-            title: '都市スカイライン都市道路 - CSUR',
-            description: 'CSURを使ってCities:Skylinesで真実な道を作ります。自動的に道路の標識線を追加し、滑らかなランプ、シームレスな接続、及びセットMODで道を選択することを含みます。',
+            title: 'CSURドキュメント',
           }
     },
     
     // ico图标
     head: [
-        ['meta', { name: 'keywords', content: 'CSUR, CSUE, 城市道路, 都市天际线, 道路模组, 中式道路, 都市道路, amamlya, Cities Skylines, Mod, 模组, テイーズスカイライン'}],
+        ['meta', { name: 'keywords', content: 'CSUR, CSUE, 开发文档, 用户文档, CSUR Documentation'}],
         ['link', { rel: 'icon', href: '/assets/img/ico.svg' }]
     ],
 
