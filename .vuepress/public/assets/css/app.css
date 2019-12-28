@@ -376,7 +376,7 @@ p.lang{
   .Intro-brand object,
   .Intro-brand img,
   .Intro-beta {
-    width: 200px;
+   width: 200px;
   }
 
   .Intro h2 {
@@ -391,9 +391,17 @@ p.lang{
     display: none;
   }
 
-  .lang p.a{
+  p.lang {
+    margin: 20px auto;
+}
+
+  p.lang a{
     display: inline;
   }
+
+  footer.lang{
+    margin: 0 0;
+}
 }
 
 .Features {
