@@ -344,6 +344,10 @@ p.lang{
   margin-top: 10px;
 }
 
+footer p.lang {
+  margin: 0 0;
+}
+
 .lang a{
 	text-decoration: none;
 	border: none;
@@ -399,7 +403,7 @@ p.lang{
     display: inline;
   }
 
-  footer.lang{
+  footer p.lang{
     margin: 0 0;
 }
 }
