@@ -2,7 +2,11 @@ module.exports = {
     plugins: {
         '@vuepress/back-to-top':{},
         '@vuepress/nprogress':{},
-        '@vuepress/medium-zoom':{}
+        '@vuepress/medium-zoom':{},
+        '@vuepress/google-analytics':
+      {
+        'ga': 'UA-155097920-1' // UA-00000000-0
+      }
 
     },
     // HTML多语言配置
@@ -31,7 +35,8 @@ module.exports = {
     // ico图标
     head: [
         ['meta', { name: 'keywords', content: 'CSUR, CSUE, 开发文档, 用户文档, CSUR Documentation'}],
-        ['link', { rel: 'icon', href: '/assets/img/ico.svg' }]
+        ['link', { rel: 'icon', href: '/assets/img/ico.png' }],
+        ['base', {target: '_self'}]
     ],
 
     // 主题配置
