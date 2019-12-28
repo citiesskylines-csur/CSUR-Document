@@ -1,16 +1,9 @@
 ---
 home: true
-heroImage: /avatar.webp
-heroText: Welcome to use CSUR
-tagline: All-new version of CSUR is in beta
-actionText: Get Started →
-actionLink: /en/guide/
-features:
-- title: New Features
-  details: Tons of new features was implemented, including roads with dedicated left-turn lanes(not availabe in the beta version), BRT roads, exhaustive collections of ramp / interface modules, fully-rendered tunnels, and a lot more. 
-- title: Models and Textures Improved
-  details: This time we further improved the models and textures and implemented tons of new features, a more realistic road effect was achieved.
-- title: Automatically Create
-  details: We developed a code to automatically create all CSUR assets using the parameters of each module so making your custom CSUR road only takes a few minutes.
-footer: Copyright © 2019 amamIya | 苏ICP备18045829号 -3
+heroImage: /assets/img/banner.webp
+heroText: CSUR Documentation
+footer: Copyright © 2019 CSUR Team
 ---
+
+<p class="action"><a href="/en/docs/guide/" class="nav-link action-button">For Users →</a></p>
+<p class="action"><a href="/en/docs/dev/" class="nav-link action-button">Developers →</a></p>
