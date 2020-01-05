@@ -173,7 +173,7 @@ function getGuideSidebar(readmeTitle, startTitle, installTitle, faqTitle, donate
             title: donateTitle,
             collapsable: false, // 展开侧边栏分组-捐赠
             children: [
-                ['donate', donateTitle], // 显示本组到边栏，但不展开标题
+                ['https://csur.fun/donate/', donateTitle], // 显示本组到边栏，但不展开标题
                 'donate-list'
             ]
         }
