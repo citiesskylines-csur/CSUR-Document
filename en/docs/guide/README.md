@@ -9,7 +9,7 @@ title: Getting Started
 
 * All-new version of CSUR coming soon! This time we further improved the models and textures and implemented tons of new features, including roads with dedicated left-turn lanes(not availabe in the beta version), BRT roads, exhaustive collections of ramp/interface modules, fully-rendered tunnels, and a lot more. We developed a code to automatically create all CSUR assets using the parameters of each module so making your custom CSUR road only takes a few minutes.
 
-* The new CSUR is currently undergoing extensive testing and debugging. The contents and features in CSUR dramatically exceed any road pack on Steam Workshop to date so testing and debugging cost significant amounts of time and effort. We will be also publishing lots of documentations (Chinese, English and Japanese), tutorials and cheetsheets after the Workshop release of is available. Stay tuned!
+* The contents and features in CSUR dramatically exceed any road pack on Steam Workshop to date so testing and debugging cost significant amounts of time and effort. We will be also publishing lots of documentations (Chinese, English and Japanese), tutorials and cheetsheets after the Workshop release of is available. Stay tuned!
 
 * You can experience the beta in the community, QQ or Discord.
 
