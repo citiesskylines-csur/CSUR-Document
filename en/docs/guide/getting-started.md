@@ -30,5 +30,6 @@ CSUR has its unique modular design which pre-builts lane transitions and ramps i
 CSUR contains a very large number of road assets, and it is very likely that you will be only using a part of them in your city build. Besides, the CSUR road packs follow a dependency structure that roads in one pack need to be used together with roads in another pack. For example, you cannot use the M-series roads only because they don't create intersections. Below is a diagram giving a general idea about how to choose the right set of CSUR contents to subscribe to.
 
 
-
-
+Having subscribed to the necessary assets and mods, you're almost all set to build your first CSUR network either in an existing savegame or on a new map. After starting the game, **make sure you have turned ON CSUR Loader and CSUR Toolbox (if you use M-series roads) in Content Manager** because mods are not enabled by default. Then hit the New Game or Load Game button, and you're ready to go!
+- For instructions on how to use the R-series (non-modular) CSUR roads, please visit the [Using Non-modular Roads](tutorial-r.md) tutorial page.
+- For instructions on how to use the M-series (modular) CSUR roads, please visit the [Using Modular Roads](tutorial-m.md) tutorial page.
