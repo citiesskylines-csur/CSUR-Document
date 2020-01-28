@@ -1,3 +1,6 @@
 # 安裝指南
 
-當前版本為 Beta 3，請前往論壇翻閱[该版本發布說明](https://bbs.csur.fun/d/11-beta-3-1221-released/3)。
+## [正式版](https://bbs.csur.fun/d/61)已发布，Steam 创意工坊订阅合集内容即可：
+https://steamcommunity.com/sharedfiles/filedetails/?id=1959216109
+
+#### 如遇问题，可前往[论坛](https://bbs.csur.fun)、QQ群等渠道求助。

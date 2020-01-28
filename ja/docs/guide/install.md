@@ -1,3 +1,6 @@
 # インストールガイド
 
-現在のバージョンはベータ3です。フォーラムにアクセスして、[このバージョンのリリースノート]（https://bbs.csur.fun/d/11-beta-3-1221-released/3）をご覧ください。
+## [公式バージョン](https://bbs.csur.fun/d/61)がリリースされました。SteamWorkshopにサブスクライブしてコンテンツを収集できます
+https://steamcommunity.com/sharedfiles/filedetails/?id=1959216109
+
+#### 問題が発生した場合は、[フォーラム](https://bbs.csur.fun)、QQ グループ、およびその他のチャンネルにアクセスしてください。

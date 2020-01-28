@@ -1,3 +1,6 @@
 # Installation guide
 
-The current version is Beta 3, please go to the forum to read [version release notes](https://bbs.csur.fun/d/11-beta-3-1221-released/3).
+## [Official Version](https://bbs.csur.fun/d/61) has been released, you can subscribe to the Steam Workshop to collect the content:
+https://steamcommunity.com/sharedfiles/filedetails/?id=1959216109
+
+#### In case of problems, you can go to [Forum](https://bbs.csur.fun), Discord and other channels for help.
