@@ -8,7 +8,9 @@ Before build pages, please head VuePress's [documentation](https://v1.vuepress.v
 [For More Information](https://vuepress.vuejs.org/zh/plugin/official/plugin-active-header-links.html#%E5%AE%89%E8%A3%85)
 
 <details>
+  
   <summary>展开</summary>
+  
 ```sh
 yarn add -D @vuepress/plugin-active-header-links
 # @vuepress/plugin-active-header-links
@@ -26,6 +28,7 @@ yarn add -D @vuepress/plugin-nprogress
 # @vuepress/plugin-nprogress
 ```
 </details>
+
 ## Development
 
 ```bash
