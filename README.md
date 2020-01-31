@@ -6,9 +6,6 @@ Before build pages, please head VuePress's [documentation](https://v1.vuepress.v
 
 > 
 
-### Required directory
-[CSUR-Vuepress/CSUR-Docs](https://github.com/citiesskylines-csur/CSUR-Docs)
-
 ### Required Plugin
 [For More Information](https://vuepress.vuejs.org/zh/plugin/official/plugin-active-header-links.html#%E5%AE%89%E8%A3%85)
 ```sh
