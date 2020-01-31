@@ -60,7 +60,7 @@ module.exports = {
         // 假如你的文档仓库和项目本身不在一个仓库：
         docsRepo: 'citiesskylines-csur/CSUR-Docs',
         // 假如文档不是放在仓库的根目录下：
-        // docsDir: 'docs',
+        docsDir: 'CSUR-Docs',
         // 假如文档放在一个特定的分支下：
         //docsBranch: 'master',
         // 默认是 false, 设置为 true 来启用
@@ -81,7 +81,7 @@ module.exports = {
                     '/docs/dev/': getDevelopSidebar('施工中')
                 },
                 // 默认为 "Edit this page" ， 编辑此页提示
-                editLinkText: '在 GitHub 上编辑此页',
+                editLinkText: '帮助我们改善此页',
                 // 最后更新时间
                 lastUpdated: '上次更新' // string | boolean
             },
@@ -96,7 +96,7 @@ module.exports = {
                     '/tw/docs/dev/': getDevelopSidebar('施工中')
                 },
                 // 默认为 "Edit this page" ， 编辑此页提示
-                editLinkText: '在 GitHub 上編輯此頁',
+                editLinkText: '幫助我們改善此頁',
                 // 最后更新时间
                 lastUpdated: '上次更新' // string | boolean
             },
