@@ -1,4 +1,5 @@
-# node modules
-node_modules
+# Build directories
+CSUR-Docs/.vuepress/dist
 
-.vuepress/dist/
+# Dependency directories
+node_modules/
