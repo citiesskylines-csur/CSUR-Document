@@ -77,7 +77,7 @@ module.exports = {
                 label: '简体中文',
                 nav: require('./nav/zh'),
                 sidebar: {
-                    '/docs/guide/': getGuideSidebar('前言','上手指南','安装','FAQ','捐赠'),
+                    '/docs/guide/': getGuideSidebar('前言','上手指南','说明书','安装','FAQ','捐赠'),
                     '/docs/dev/': getDevelopSidebar('施工中')
                 },
                 // 默认为 "Edit this page" ， 编辑此页提示
@@ -92,7 +92,7 @@ module.exports = {
                 label: '正體中文',
                 nav: require('./nav/tw'),
                 sidebar: {
-                    '/tw/docs/guide/': getGuideSidebar('前言','上手指南','安裝','FAQ','捐贈'),
+                    '/tw/docs/guide/': getGuideSidebar('前言','上手指南','说明书','安裝','FAQ','捐贈'),
                     '/tw/docs/dev/': getDevelopSidebar('施工中')
                 },
                 // 默认为 "Edit this page" ， 编辑此页提示
@@ -107,7 +107,7 @@ module.exports = {
                 label: 'English',
                 nav: require('./nav/en'),
                 sidebar: {
-                    '/en/docs/guide/': getGuideSidebar('Perface','Getting Started','Install','FAQ','Donate'),
+                    '/en/docs/guide/': getGuideSidebar('Perface','Getting Started','User Guide','Install','FAQ','Donate'),
                     '/en/docs/dev/': getDevelopSidebar('Under Construction)')
                 },
                 lastUpdated: 'Last Updated', // string | boolean 最后更新时间
@@ -123,7 +123,7 @@ module.exports = {
                 label: '日本語',
                 nav: require('./nav/ja'),
                 sidebar: {
-                    '/ja/docs/guide/': getGuideSidebar('序文','入門ガイド','インストールする','FAQ','寄付する'),
+                    '/ja/docs/guide/': getGuideSidebar('序文','入門ガイド','説明書','インストールする','FAQ','寄付する'),
                     '/ja/docs/dev/': getDevelopSidebar('建設中')
                 },
                 lastUpdated: '最終更新', // string | boolean 最后更新时间
@@ -137,7 +137,7 @@ module.exports = {
 }
 
 // 导入指南页的侧边栏
-function getGuideSidebar(readmeTitle, startTitle, installTitle, faqTitle, donateTitle) {
+function getGuideSidebar(readmeTitle, startTitle, toolboxTitle, installTitle, faqTitle, donateTitle) {
     return[
         {
             title: readmeTitle,
@@ -153,6 +153,13 @@ function getGuideSidebar(readmeTitle, startTitle, installTitle, faqTitle, donate
                 'core.md', // 这样可以自定义本组在边栏显示的文字
                 'compatibility.md',
                 'notice.md',  
+            ]
+        },
+        {
+            title: toolboxTitle,
+            collapsable: false, // 展开侧边栏分组-ToolBox 使用说明
+            children: [
+                'toolbox'
             ]
         },
         {
