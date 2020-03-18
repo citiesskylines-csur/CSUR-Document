@@ -12,12 +12,12 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@vuepress/plugin-back-to-top": "^1.2.0",
-    "@vuepress/plugin-google-analytics": "^1.2.0",
-    "@vuepress/plugin-medium-zoom": "^1.2.0",
-    "@vuepress/plugin-nprogress": "^1.2.0"
+    "@vuepress/plugin-back-to-top": "^1.4.0",
+    "@vuepress/plugin-google-analytics": "^1.4.0",
+    "@vuepress/plugin-medium-zoom": "^1.4.0",
+    "@vuepress/plugin-nprogress": "^1.4.0"
   },
   "dependencies": {
-    "vuepress": "^1.0.0-rc.1"
+    "vuepress": "^1.4.0"
   }
 }
