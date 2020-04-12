@@ -3,3 +3,6 @@ CSUR-Docs/.vuepress/dist
 
 # Dependency directories
 node_modules/
+
+# 隐藏私密信息
+secret.js
