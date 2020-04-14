@@ -1,7 +1,7 @@
 {
   "name": "csur",
   "version": "1.0.0",
-  "description": "",
+  "description": "CSUR Documentation",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -9,7 +9,7 @@
     "build": "vuepress build CSUR-Docs"
   },
   "keywords": [],
-  "author": "",
+  "author": "CSUR Team",
   "license": "ISC",
   "devDependencies": {
     "@vuepress/plugin-back-to-top": "^1.4.0",
