@@ -13,12 +13,16 @@ Main features:
 2. Makes it much easier to select roads with offsets on the map by clicking on road models instead of clicking on their central axis.
 3. Pillars will adapt to the model offsets when building elevated CSUR roads.
 4. Traffic paths will follow the actual lanes as indicated in the model, regardless of whether they are parallel to the road segment.
+5. Disable CSUR Shift Ramp Transition and Express Road Zone
+6. Call TMPE stayinlane laneconnector for complex CSUR node
 
 Bug fixes (as of 01/19/2020):
 
 1. Fixed lack of available lanes when using roads larger than CSUR 8DR as outside connections.
 2. Fixed cims stopping on intersections when directly connecting large two-way roads (>=8DR).
 3. Fixed lack of lane connectors when using TM:PE.
+4. Fix some too large junctions
+5. Fix CSUR road zone align issue
 
 ## 2. How to enable CSUR ToolBox
 

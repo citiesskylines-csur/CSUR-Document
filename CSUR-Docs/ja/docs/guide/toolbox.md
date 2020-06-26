@@ -1,124 +1,115 @@
 ---
 sidebarDepth: 3
 ---
-# ToolBox User Guide
+# ToolBox取扱説明書
 
-## 1. Overview
+## 1.概要
 
-CSUR Toolbox contains a series of important tools for CSUR 2.0.
+CSUR ToolBoxはCSUR 2.0の重要な支援ツールの集合である。主に次の6つの機能があります。
 
-Main features:
+1. CSUR道路を素早く選択できる補助UIを提供します。
+2. ゲームにCSURのオフセットを加えて、道を選ぶのに便利です。（実際の路面モジュールを選んで、CSURオフセット道路を選択します。）
+3. CSURオフセット道路橋脚自動オフセット整列
+4. 車線のスムージングオフセット
+5. CSUR Shift Ramp TransitionとExpress道路のZoneを除去します。
+6. TMPE laneconnectorを呼び出して複雑なCSUR交差点を車線接続します。
 
-1. Provides a UI panel to find CSUR roads on a lane-by-lane basis
-2. Makes it much easier to select roads with offsets on the map by clicking on road models instead of clicking on their central axis.
-3. Pillars will adapt to the model offsets when building elevated CSUR roads.
-4. Traffic paths will follow the actual lanes as indicated in the model, regardless of whether they are parallel to the road segment.
+残りのバグの修復（01/19/2020）：
 
-Bug fixes (as of 01/19/2020):
+1. CSUR 8DR以上の道路が地図の出入り口として使われる場合、一部の出入り口は1車線しか使えません。
+2. CSURの大きな道路が直接につながっている時、市民は直接交差点に止まります。
+3. TMPEは車線接続時、一部のCSUR路の車道接続点を読み取ることができません。
+4. 大きな交差点を修復しました。
+5. CSUR道路zoneが揃わない問題
 
-1. Fixed lack of available lanes when using roads larger than CSUR 8DR as outside connections.
-2. Fixed cims stopping on intersections when directly connecting large two-way roads (>=8DR).
-3. Fixed lack of lane connectors when using TM:PE.
+CSUR UIの具体的な使い方を紹介します。
 
-## 2. How to enable CSUR ToolBox
+## 2.UI入口
 
-- Find "CSURToolBox" mod in Content Manager, enable it.
-- Then, you can find a toggle button on the right ![UI Toggle Button](https://raw.githubusercontent.com/citiesskylines-csur/CSURToolBox/master/Wiki/Button.png) in the game windows.
-- Click on the button to show / hide the UI panel and you can drag & drop it onto your favorite place.
+メインインターフェースに入ると、コンテンツマネージャ内で、Modインターフェースの下にCSURToolBoxを見つけ、それを有効にすると効果があります。
 
-## 3. Introductions to CSUR UI Panel
+ゲームに入ると、画面の右側にUIボタンがあります、右の図に示すように: ![](https://raw.githubusercontent.com/citiesskylines-csur/CSURToolBox/master/Wiki/Button.png) 
 
-The UI panel is divided into 7 sections below:
+マウスの左ボタンを押して、このボタンをドラッグして好きな場所に移動できます。
+マウスの左ボタンをクリックしてUI画面を呼び出すことができます。
 
-![UI Panel](https://raw.githubusercontent.com/citiesskylines-csur/CSURToolBox/master/Wiki/overview.jpg) 
 
-|#|Section Name|Features|
+## 3.UIインタフェース
+
+呼出されるUIインターフェースは、図のように左から右に、上から下まで7つの部分に分かれています。
+![](https://raw.githubusercontent.com/citiesskylines-csur/CSURToolBox/master/Wiki/overview.jpg) 
+
+|番号付け|名前|作用|
 |:---:|:---:|:---:|
-|1|Title|Drag & drop UI position|
-|2|Preview panel|Shows thumbnail of the selected road|
-|3|Variation panel|Switch variation of roads with the same lane combination|
-|4|Ending lanes panel| Select lanes at the end of the road|
-|5|Starting lanes panel|Select lane offsets at the beginning of the road |
-|6|Shortcut panel|Shortcuts to modify selections in sections 4 & 5|
-|7|Close button|Hide UI Panel|
+|1|タイトルバー|UIの位置をドラッグします|
+|2|プレビュー画面|選択した道路の状況を表示|
+|3|ステータスパネル|同じタイプの道路の異なるスタイルを切り替えます。|
+|4|目標車線パネル|道の終点車線のインターフェイスを選択します。|
+|5|スタート車線パネル|道の首端の車線のインターフェイスを選択します。|
+|6|調整パネル|4,5の中で選択された車線を調整します。|
+|7|閉じる|UIを閉じる|
 
-### 3.1 Title
+### 3.1 タイトルバー
 
-Left click, hold & drag it to move the panel.
+左ボタンを押しながら画面の位置をドラッグします。
 
-### 3.2 Preview panel
+### 3.2 プレビュー画面
 
-Shows the road thumbnail icon when there is a road available for the lane combination and variation selected, otherwise shows "Not found".
+当選ボタンに対応する道路があると、道路のアイコンが表示されます。そうでないとNot foundが表示されます。
 
-### 3.3 Styles panel
+### 3.3 ステータスパネル
 
-|Button|Name|Description|
+|ボタンのスタイル|名前|作用|
 |:---:|:---:|:---:|
-|![one-way](https://raw.githubusercontent.com/citiesskylines-csur/CSURToolBox/master/Wiki/single.png)|One-way|Makes a one-way road using the lane combination selected in the lane panels|
-|![two-way](https://raw.githubusercontent.com/citiesskylines-csur/CSURToolBox/master/Wiki/dual.png)|Two-way|Makes a two-way road with **mirrored** layout on the opposite direction|
-|![asymmetric 1](https://raw.githubusercontent.com/citiesskylines-csur/CSURToolBox/master/Wiki/asym1.png)|Asymmetrical +1 lane|Adds **one** more lane to the **forward** direction based on the two-way mode|
-|![asymmetric 2](https://raw.githubusercontent.com/citiesskylines-csur/CSURToolBox/master/Wiki/asym2.png)|Asymmetrical +2 lanes|Adds **two** more lanes to the **forward** direction based on the two-way mode|
-|![u-turn](https://raw.githubusercontent.com/citiesskylines-csur/CSURToolBox/master/Wiki/uturn.png)|U-turn lane|Add a **U-turn** lane to the *forward* direction based on the two-way mode|
-|![sidewalk & bike lanes](https://raw.githubusercontent.com/citiesskylines-csur/CSURToolBox/master/Wiki/bike.png)|Sidewalk & bike lanes|The road to be built contains both sidewalk and bike lanes|
-|![sidewalk only](https://raw.githubusercontent.com/citiesskylines-csur/CSURToolBox/master/Wiki/human.png)|Sidewalk only|The road to be built contains sidewalk only|
-|![plain road only](https://raw.githubusercontent.com/citiesskylines-csur/CSURToolBox/master/Wiki/nohuman.png)|Plain road only|The road to be built does not contain sidewalk or bike lanes|
+|![](https://raw.githubusercontent.com/citiesskylines-csur/CSURToolBox/master/Wiki/single.png)|一方向|車線パネルの**まま**一方通行の道路を生成します|
+|![](https://raw.githubusercontent.com/citiesskylines-csur/CSURToolBox/master/Wiki/dual.png)|双方向|車線パネルのままで双方向の道路を生成します(対向は**ミラー**です)|
+|![](https://raw.githubusercontent.com/citiesskylines-csur/CSURToolBox/master/Wiki/asym1.png)|非対称+1|**双方向**に発生し、前進方向に**1**車線を増やすタイプです|
+|![](https://raw.githubusercontent.com/citiesskylines-csur/CSURToolBox/master/Wiki/asym2.png)|非対称+2|**双方向**に発生し、前進方向に**2**車線を増やすタイプです|
+|![](https://raw.githubusercontent.com/citiesskylines-csur/CSURToolBox/master/Wiki/uturn.png)|Uターン車線|**双方向**に発生し、前進方向に**Uターン**車線を増やすタイプです|
+|![](https://raw.githubusercontent.com/citiesskylines-csur/CSURToolBox/master/Wiki/bike.png)|歩道と自転車道|自動車道と歩道があります|
+|![](https://raw.githubusercontent.com/citiesskylines-csur/CSURToolBox/master/Wiki/human.png)|歩道だけ|歩道しかない|
+|![](https://raw.githubusercontent.com/citiesskylines-csur/CSURToolBox/master/Wiki/nohuman.png)|純路面|歩道と自転車道がありません|
 
-### 3.4 Ending lanes panel
+### 3.4 目標車線パネル、道の終点車線のインターフェイスを選択します
 
-Select lane combinations at the end of the road segment.
+### 3.5 スタート車線パネル道の首端の車線のインターフェイスを選択します
 
-### 3.5 Starting lanes panel
+この2つのパネルはUIの中核である。上には複数のボタンがあり、それぞれCSUR道路の各車線に対応しています。
 
-Select lane combinations at the beginning of the road segment.
+![](https://raw.githubusercontent.com/citiesskylines-csur/CSURToolBox/master/Wiki/example4.png)
 
-> Each button on these two panels represents the position of a traffic lane.
->
-> ![offsets](https://raw.githubusercontent.com/citiesskylines-csur/CSURToolBox/master/Wiki/example4.png) 
->
-> **NOTE**: All the selected lanes are **one-way**. All two-way roads are derived from one-way roads on the panel.
+**注意：このパネルの選び方の車道はすべてシングル方向で、すべての双方向タイプはパネルのボタンから派生します**
 
-The offset starts from `L2` on the left. The black `C` (no offset) divides the panel into the left green `L` offsets and the right blue `R `offsets.
+本UIは左側のL 2から始まります。したがって、パネル左側の緑の4つのボタンはL部分、黒いCは分離線、右側の青いボタンはR部分です。
+例えば、よく使われている6 DRはパネルの中で123車線を選択して、双方向ボタンを選ぶで呼び出すことができます。
+![](https://raw.githubusercontent.com/citiesskylines-csur/CSURToolBox/master/Wiki/example3.png) 
 
-For example, we want to select the commonly-used 6DR (6 lanes, two-way), we can select `1`, `2`, `3` on both panels.
+第二列のPボタンは標準位置で右に半車線の位置がずれていますが、ゲーム内で左に走るオプションが設定されていたら、実際に左にシフトします。
+![](https://raw.githubusercontent.com/citiesskylines-csur/CSURToolBox/master/Wiki/example5.png)
+道路の柵の関係で、バンドPのタイプを選択すると、モデルが衝突することなく、普通のタイプとちょうど並んでいることができます。
 
-![to select 6DR](https://raw.githubusercontent.com/citiesskylines-csur/CSURToolBox/master/Wiki/example3.png) 
+実例：
+![](https://raw.githubusercontent.com/citiesskylines-csur/CSURToolBox/master/Wiki/example6.png) 
+4Rを2R 2R4Pと接続する必要がある場合：
+開始端：4R，1234を選択；
+終点端：2R，12を選択； 2R4P，3P 4Pを選択。
+![](https://raw.githubusercontent.com/citiesskylines-csur/CSURToolBox/master/Wiki/example1.png) 
 
-The buttons with a `P` on the second row represents lanes 0.5-unit away from the first row. 
+4R 1R5Pを3R 2R5Pと接続する必要がある場合：
+開始端：4R，1234を選択	；1R5P，5Pを選択
+終点端：3R，123を選択	；2R5P，4P 5Pを選択。
+![](https://raw.githubusercontent.com/citiesskylines-csur/CSURToolBox/master/Wiki/example2.png) 
 
-![offsets with an additional P](https://raw.githubusercontent.com/citiesskylines-csur/CSURToolBox/master/Wiki/example5.png) 
+### 3.6 調整パネル
 
-A pair of barriers separating two roadways is at least 0.5-lane wide. When laying out a local-express road or creating a ramp, you can select one roadway with whole numbers and another with the `P` to avoid overlaps.
+調整パネルには3つのボタンがあり、車道パネルの内容を調整する役割があります。
 
-For example:
-
-![4R = 2R 2R4P & 4R 1R5P = 3R 2R5P](https://raw.githubusercontent.com/citiesskylines-csur/CSURToolBox/master/Wiki/example6.png) 
-
-To connect a `4R` with a `2R` & `2R4P`.
-
-From: `4R`, selects `1`, `2`, `3`, `4`;
-
-To: `2R`, selects `1`, `2`; `2R4P`, selects `3P`, `4P`.
-
-![4R = 2R 2R4](https://raw.githubusercontent.com/citiesskylines-csur/CSURToolBox/master/Wiki/example1.png) 
-
-To connect a `4R` & `1R5P` with a `3R` & `2R5P`
-
-From: `4R`, selects `1`, `2`, `3`, `4`; `1R5P`, selects`5P`;
-
-To: `3R`, selects `1`, `2`, `3`; `2R5P`, selects `4P`, `5P`.
-
-![4R 1R5P = 3R 2R5P](https://raw.githubusercontent.com/citiesskylines-csur/CSURToolBox/master/Wiki/example2.png) 
-
-### 3.6 Shortcut panel
-
-These three buttons are shortcuts for modifying the selections in the lane panels.
-
-|Button|Name|Description|
+|ボタンのスタイル|名前|作用|
 |:---:|:---:|:---:|
-|![duplicate](https://raw.githubusercontent.com/citiesskylines-csur/CSURToolBox/master/Wiki/copy.png)|Duplicate|Duplicates selections from the **From** panel at the **bottom** to the **To** panel at the **top**.|
-|![swap](https://raw.githubusercontent.com/citiesskylines-csur/CSURToolBox/master/Wiki/swap.png)|Swap|Swaps selections between from & to panels (reverses the module).|
-|![reset](https://raw.githubusercontent.com/citiesskylines-csur/CSURToolBox/master/Wiki/clear.png)|Clear|Resets both panels and clear all the selections.|
+|![](https://raw.githubusercontent.com/citiesskylines-csur/CSURToolBox/master/Wiki/copy.png)|コピー|**下の**スタート車線パネルで選択したボタンを**上の**目標車線パネルにコピーします。|
+|![](https://raw.githubusercontent.com/citiesskylines-csur/CSURToolBox/master/Wiki/swap.png)|交換|スタート車線パネルと目標車線パネルの選択ボタンを入れ替えると、リバースビルドに相当します。|
+|![](https://raw.githubusercontent.com/citiesskylines-csur/CSURToolBox/master/Wiki/clear.png)|クリア|二つのパネルを初期状態に戻し、選択したボタンをすべてキャンセルします。|
 
-### 3.7 Close button
+### 3.7 閉じるボタン
 
-You can hide CSUR UI by clicking on the close button, or you can click on the CSUR toggle button.
+クリックしてUIを閉じることができます。また、アイコンを再度クリックしても、UIをオフにすることができます。
